@@ -111,7 +111,7 @@ class Medoo {
             console.log(sql);
         }
         try {
-            return await this.connection.execute(sql);
+            return await this.connection.query(sql);
         } catch (err) {
             console.log(err);
             return [false, 0];
